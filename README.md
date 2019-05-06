@@ -38,4 +38,4 @@ gulp
 - Se estiver utilizando ```MAC``` abra o arquivo ```dist/index.html``` em seu navegador.
 
 
-Obd: é necessário ter instalado o GULP 3.9.0 por falta de compatibilidade com o babel.
+Obs: é necessário ter instalado o GULP 3.9.0 por falta de compatibilidade com o babel.
