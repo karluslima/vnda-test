@@ -1,0 +1,69 @@
+.showcase {
+  margin-top: 30px;
+  position: relative;
+
+  @media(min-width: $sm){
+    margin-top: 50px;
+  }
+
+  @media(min-width: $md) {
+    margin-top: 60px;
+  }
+
+  >.title {
+    color: $mine-shaft;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    max-width: 130px;
+    text-transform: uppercase;
+    @media(min-width: $sm) {
+      margin-left: 15%;
+    }
+  }
+}
+
+.showcase-items {
+  display: grid;
+  margin: 0 15px;
+  position: relative;
+  text-align: center;
+
+  @media(min-width: $lg) {
+    grid-template-columns: 50% 50%;
+  }
+}
+.showcase-item {
+  margin-bottom: 40px;
+  width: 100%;
+
+  .item-name {
+    font-family: $secondaryFont;
+    font-size: 1.9em;
+  }
+
+  .item-short-descripion {
+    font-family: $secondaryFont;
+    font-size: 1.4em;
+  }
+
+  .item-photo {
+    height: auto;
+    margin-top: 10px;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .button-buy {
+    color: #000;
+    display: block;
+    font-family: $secondaryFont;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

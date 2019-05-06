@@ -1,0 +1,162 @@
+footer {
+  margin-bottom: 100px;
+
+  .content {
+    @media(min-width: $sm) {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+  }
+}
+.footer-logo {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+
+  span {
+    background-color: #fff;
+    color: $janna;
+    display: inlne-block;
+    font-family: $secondaryFont;
+    font-size: 3.5em;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+
+    @media(min-width: $md) {
+      padding: 0 200px;
+    }
+  }
+  &::after {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    width: 100%;
+  }
+}
+.social-networks {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+  a {
+    margin: 0 20px;
+
+    @media(min-width: $md) {
+      margin: 0 40px;
+    }
+    img:hover {
+      opacity: .7;
+    }
+  }
+}
+.institutional-item {
+  text-align: center;
+}
+.institutional-link {
+  color: $black;
+  font-family: $primaryFont;
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+form {
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    background-color: #000;
+    content: '';
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    top: -80px;
+    width: 1px;
+  }
+  fieldset {
+    border: 0;
+  }
+  legend {
+    display: block;
+    font-family: $secondaryFont;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+  }
+  .field {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+  }
+  label {
+    background-color: #fff;
+    color: #000;
+    font-family: $secondaryFont;
+    font-size: 1.2em;
+    font-weight: 700;
+    left: 50%;
+    padding: 0 5px;
+    position: absolute;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    top: 13px;
+    z-index: 1;
+  }
+  .focused {
+    label {
+      transform: translateY(-125%);
+      font-size: .75em;
+    }
+  }
+  #email {
+    border: 1px solid #000;
+    color: #000;
+    font-family: $secondaryFont;
+    line-height: 40px;
+    padding-left: 15px;
+    position: relative;
+    width: 200px;
+  }
+  .newsletter-button {
+    background: #fff;
+    border: 1px solid #000;
+    border-top: 0;
+    color: #000;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    line-height: 40px;
+    position: relative;
+    text-transform: uppercase;
+    transition: .3s;
+    width: 200px;
+
+    &:hover {
+      box-shadow: inset 200px 0 0 0 #000;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+#email{
+  &:valid,
+  &:focus {
+    +label {
+      transform: translate(-100%, -145%);
+      font-size: .85em;
+    }
+  }
+  &:valid {
+    background-color: #fff;
+  }
+}

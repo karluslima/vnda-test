@@ -1,0 +1,108 @@
+//PRIMARY BANNER
+.primary-banner {
+  position: relative;
+  width: 100%;
+
+  .banner-image {
+    height: auto;
+    width: 100%;
+  }
+  >.banner-text {
+    color: #fff;
+    font-family: $primaryFont;
+    font-size: 1.8em;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 100%;
+
+    @media(min-width: $md) {
+      font-size: 2.2em;
+      line-height: 34px;
+    }
+  }
+  .banner-button {
+    background-color: transparent;
+    border: 1px solid $black;
+    color: $black;
+    display: block;
+    font-family: $secondaryFont;
+    font-size: 1.2em;
+    left: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    bottom: 20%;
+    transition: .3s;
+    transform: translateX(-50%);
+    position: absolute;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+//SECONDARY BANNER
+.secondary-banner {
+  align-items: center;
+  background-color: #F5E5D9;
+  display: flex;
+  padding: 20px 10px;
+
+  .banner-text {
+    color: $mine-shaft;
+    font-family: $primaryFont;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+
+    @media(min-width: $md) {
+      font-size: 2.2em;
+      line-height: 34px;
+    }
+  }
+}
+//SLIDER
+.swiper-container {
+  width: 980px;
+}
+.swiper-slide {
+  font-size: 18px;
+  color:#000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+.parallax-bg {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 130%;
+  -webkit-background-size: cover;
+}
+.swiper-slide .title {
+  background-color: #fff;
+  display: block;
+  font-size: 41px;
+  font-weight: 300;
+  max-width: 180px;
+}
+.swiper-slide .subtitle {
+  background-color: #fff;
+  display: inline-block;
+  font-size: 21px;
+  margin: 20px 0;
+  max-width: 150px;
+}
+.swiper-slide .text {
+  background-color: #fff;
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}

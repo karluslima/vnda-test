@@ -1,0 +1,32 @@
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  @media(min-width: $sm) {
+    width: 1170px;
+  }
+}
