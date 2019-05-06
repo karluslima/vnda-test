@@ -33,5 +33,9 @@ Execute o comando abaixo na pasta principal do projeto.
 gulp
 ```
 
-Se estiver utilizando ```Windows``` o navegador ``Chrome`` será aberto já na página codificada.
-Se estiver utilizando ```MAC``` abra o arquivo ```dist/index.html``` em seu navegador.
+- Se estiver utilizando ```Windows``` o navegador ``Chrome`` será aberto já na página codificada.
+
+- Se estiver utilizando ```MAC``` abra o arquivo ```dist/index.html``` em seu navegador.
+
+
+Obd: é necessário ter instalado o GULP 3.9.0 por falta de compatibilidade com o babel.
